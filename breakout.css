@@ -4,17 +4,23 @@ body {
     color: beige;
     margin: 0;
     padding: 0;
-    /* Der Atari Hintergrund*/
-    background: url('sound&img/ATARI.jpg') no-repeat center center; 
-    background-size: cover; 
+
+    /* Atari Hintergrund */
+    background: url('sound&img/ATARI.jpg') no-repeat center center;
+    background-size: cover;
     height: 100vh;
-    /*alternativ Hintergrund=background-color: rgb(201, 2, 2); */
 }
 
+/* ====================
+   Titel
+==================== */
 h1 {
     margin-top: 20px;
 }
 
+/* ====================
+   Canvas
+==================== */
 #board {
     display: block;
     margin: 20px auto;
@@ -22,10 +28,46 @@ h1 {
     border: 2px solid beige;
 }
 
-#controls {
-    margin-top: 10px;
+/* ====================
+   Score / Highscore
+==================== */
+#hud {
+    width: 620px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: beige;
 }
 
+/* ====================
+   Control Bar (NEU)
+==================== */
+#controlBar {
+    width: 620px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Center Box für Start / Pause */
+.center-controls {
+    display: flex;
+    gap: 10px;
+}
+
+/* Steuerungsbuttons links / rechts */
+.control-btn {
+    width: 100px;
+    height: 55px;
+    font-size: 26px;
+    padding: 0;
+}
+
+/* ====================
+   Buttons (bestehend)
+==================== */
 button {
     margin: 5px;
     padding: 10px 20px;
@@ -33,7 +75,7 @@ button {
     cursor: pointer;
     border-radius: 8px;
     border: none;
-    background-color: beige ;
+    background-color: beige;
     color: black;
     transition: 0.2s;
 }
