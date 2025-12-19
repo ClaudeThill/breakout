@@ -1,0 +1,43 @@
+body {
+    text-align: center;    
+    font-family: Arial, sans-serif;
+    color: beige;
+    margin: 0;
+    padding: 0;
+    /* Der Atari Hintergrund*/
+    background: url('sound&img/ATARI.jpg') no-repeat center center; 
+    background-size: cover; 
+    height: 100vh;
+    /*alternativ Hintergrund=background-color: rgb(201, 2, 2); */
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#board {
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(59, 58, 58);
+    border: 2px solid beige;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: beige ;
+    color: black;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: lightgray;
+}
